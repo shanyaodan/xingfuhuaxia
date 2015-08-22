@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="85.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/mm_color_666666" android:id="@+id/chi_shop_name_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="天通苑西三区" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:src="@drawable/mm_address_icon" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/mm_color_999999" android:id="@+id/chi_shop_address_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="北京市昌平区天通苑西三区" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:src="@drawable/mm_shop_distance_icon" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/mm_color_999999" android:id="@+id/chi_shop_distance_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="距离90米" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/chi_shop_num_tv" android:background="@drawable/mm_red_bg" android:layout_width="50.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:text="1家店" />
+    </LinearLayout>
+    <View android:background="@color/mm_color_e5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/chi_shop_child_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

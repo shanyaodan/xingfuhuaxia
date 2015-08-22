@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
+        <TextView android:background="@color/mm_color_dddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/mm_color_666666" android:gravity="center_vertical" android:id="@+id/mm_shoping_cat_total_txt" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <Button android:textSize="15.0sp" android:textColor="@drawable/mm_btn_text_color" android:layout_gravity="center_vertical" android:id="@+id/mm_shoping_cat_distribution_btn" android:background="@drawable/mm_btn_bg" android:layout_width="100.0dip" android:layout_height="30.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/mm_shopping_cat_count_rl" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip">
+        <ImageView android:background="@drawable/mm_shop_cat_icon" android:layout_width="47.0dip" android:layout_height="47.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/mm_shoping_cat_count_txt" android:background="@drawable/mm_red_oval_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</FrameLayout>

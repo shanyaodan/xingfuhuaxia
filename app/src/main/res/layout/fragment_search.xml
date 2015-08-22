@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/banner_layout" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/mm_search_icon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+            <EditText android:textSize="16.0sp" android:textColor="@color/mm_color_666666" android:textColorHint="@color/mm_color_d2d2d2" android:gravity="center_vertical" android:id="@+id/chi_search_name_edt" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="输入商品名称" />
+        </LinearLayout>
+        <Button android:textColor="@color/mm_color_666666" android:gravity="center|right" android:id="@+id/chi_shop_search_btn" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="搜索" />
+    </LinearLayout>
+    <ListView android:id="@+id/chi_search_shop_lv" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <include layout="@layout/layout_shopping_cart" />
+</LinearLayout>

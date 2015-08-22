@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mm_color_f3f3f3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/banner_layout" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/mm_color_f3f3f3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/mm_search_icon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+            <EditText android:textSize="16.0sp" android:textColor="@color/mm_color_666666" android:textColorHint="@color/mm_color_d2d2d2" android:gravity="center_vertical" android:id="@+id/mm_location_name_edt_data" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="输入小区名称" android:singleLine="true" android:imeOptions="actionSearch" />
+        </LinearLayout>
+        <Button android:textColor="@color/mm_color_666666" android:gravity="center|right" android:id="@+id/chi_position_btn_data" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="搜索" />
+    </LinearLayout>
+    <TextView android:background="@color/mm_color_e5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@+id/chi_position_search_context_txt_data" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="@color/mm_color_ff6f6c" android:gravity="center|right" android:id="@+id/chi_reposition_btn" android:background="@color/transparent" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:text="重新定位" />
+        <ImageView android:background="@drawable/mm_location_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <TextView android:background="@color/mm_color_e5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <ListView android:id="@+id/chi_postion_result_lv_data" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:divider="@color/transparent" android:dividerHeight="10.0dip" />
+</LinearLayout>
